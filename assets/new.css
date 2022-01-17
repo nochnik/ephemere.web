@@ -1,0 +1,92 @@
+@import url('./general.css');
+
+body{
+	width: 100%;
+	padding: 0 px;
+	margin: 0 auto;
+
+	font-size: 18px;
+	font-weight: normal;
+	font-family: 'Jost', sans-serif;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*header design*/
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu{
+	display: flex;		
+	font-size: 20px;
+	text-align: center;
+}
+
+.menu a{
+	margin-right: 40px;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	background-color:lightgray;
+	transition: 2s;
+}
+
+.menu a:active{
+	background-color:red;
+	transition: 0.3s;
+}
+
+/*photogallery design*/
+
+h2{
+	letter-spacing: 1px;
+	font-size: 72px;
+	font-family: 'cattedrale-demoregular', 'Jost', sans-serif;
+}
+
+span{
+	font-size: 64px;
+	font-family: 'Jost', sans-serif;
+}
+
+.photo{
+	width: 250px;
+	height: 250px;
+	border-radius: 12px;	
+}
+
+#mainphoto{
+	width: 800px;
+	height: 800px;
+	border-radius: 48px;
+	m
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: #cc6677;
+  padding: 10px;
+}

@@ -1,0 +1,129 @@
+@import url('./general.css');
+
+body{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+	font-size: 18px;
+	font-weight: normal;
+	font-family: 'Jost', sans-serif;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*header design*/
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu{
+	display: flex;		
+	font-size: 20px;
+	text-align: center;
+}
+
+.menu a{
+	margin-right: 40px;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	background-color:lightgray;
+	transition: 2s;
+}
+
+.menu a:active{
+	background-color:red;
+	transition: 0.3s;
+}
+
+.header{
+	background-position: right bottom, left top;
+	background-size: 40px 40px;
+	background-image: linear-gradient(to right, #cccccc 1px, transparent 1px),
+	linear-gradient(to bottom, #cccccc 1px, transparent 1px);
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/*Buttons design*/
+
+.column {
+	float: left;
+	width: 32%;
+	justify-content: center;
+	padding: 8px;
+}
+
+.price {
+	list-style-type: none;
+	border: 2px solid #eee;
+	margin: 0;
+	padding: 0;
+	transition: 0.3s;
+}
+
+.price li {
+	border-bottom: 2px solid #eee;
+	padding: 20px;
+	text-align: center;
+}
+
+.price:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.price .grey{
+	background-color: #cccccc;
+}
+
+.price .blue{
+	background-color: lightgreen;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 800px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+#invis{
+	opacity: 0;
+}
+
+/*Forms design*/
+
+	
+
+.nameform{
+	padding-top: 12px;
+	height: 1200px;
+}
+
+.buttonform{
+	background-color: #cccccc; 
+	border: none;
+	color: black;
+	padding: 8px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.buttonform:hover{
+	background-color: lightgreen;
+	transition: 1s ease;
+}
