@@ -9,11 +9,11 @@
     font-style: normal;
 
 }
-body{
 
+body{
 	padding: 0;
 	margin: 0;
-	font-size: 18px;
+	font-size: 1.2em;
 	font-weight: normal;
 	font-family: 'Jost', sans-serif;
 }
@@ -141,13 +141,27 @@ header a:visited{
 	transition: 0.5s ease-out;
 }
 
+/* carousel section */
+
+.carousel-item active{
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.carousel-caption-block{
+	background-color: #cccccc;
+	z-index: 10;
+	margin: 0 auto;
+}
+
 /* photo section design */
 
 
 .mentalblog{
 	position: absolute;
 	display: inline-flex;
-	top: 900px;
 	left: 400px;
 
 	margin: 0 auto;
@@ -212,7 +226,6 @@ header a:visited{
 .endgif{
 	width: 1200px;
 }
-
 
 /*footer*/
 

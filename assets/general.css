@@ -15,10 +15,10 @@ ul, li{
 }
 
 h1{
-	font-size: 50px;
+	font-size: 72px;
 	font-weight: bold;
 	font-kerning: auto;
-	letter-spacing: 2px;
+	letter-spacing: 0.04em;
 
 }
 
@@ -40,6 +40,11 @@ strong{
 	color: hotpink;
 }
 
+abbr{
+	text-decoration: none;
+	font-style: italic;
+}
+
 a{
 	color: black;
 }
@@ -54,11 +59,6 @@ a:hover{
 
 a:active{
 	color: blue;
-}
-
-abbr{
-	text-decoration: none;
-	font-style: italic;
 }
 
 header a{
