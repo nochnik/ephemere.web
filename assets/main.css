@@ -10,64 +10,34 @@
 
 }
 
-body{
-	padding: 0;
-	margin: 0;
-	font-size: 1.2em;
-	font-weight: normal;
-	font-family: 'Jost', sans-serif;
+/*bootstrap nav bar*/
+.navbar-brand{
+	display: inline-flex;
+	align-self: left;
 }
 
-.container{
-	width: 1200px;
-	margin: 0 auto;
+.navbar-brand h1{
 }
 
-/*header design*/
+#logo{
+	width: 8vw;
+	height: 9.6vw;
+}
 
-header a{
+.navbar-brand a{
 	color: #000000;
 	text-decoration: none;
 }
 
-header a:visited{
+.navbar-brand a:visited{
 	color: #000000;
 	text-decoration: none;
-}
-
-.nav{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.menu{
-	display: flex;		
-	font-size: 20px;
-	text-align: center;
-}
-
-.menu a{
-	margin-right: 40px;
-	text-decoration: none;
-}
-
-.menu a:hover{
-	background-color:lightgray;
-	transition: 2s;
-}
-
-.menu a:active{
-	background-color:red;
-	transition: 0.3s;
 }
 
 /*section design*/
 
 /*adding tiled background*/
 .aboutbg{
-	position: absolute;
-	height: 740px;
 	width: 100%;
 	background-image: url("../images/bg.png");
 	background-color: #7799cc;
@@ -75,52 +45,29 @@ header a:visited{
 	z-index: -1;
 }
 
-.gallery{
-	display: flex;
-	justify-content: space-between;
-
-}
-
-.ts-container{
-	position: relative;
-	width: 300px;
-
-}
-
-/* to make two preview image buttons inline, i should make them unique, giving them id value*/
-
-#ep{
-	right: 250px;
-
-}
 
 /* make animated and interactive buttons for shopping in first section */
 
-.ts-img{
-	display: block;
-	transition: 0.5s ease;
-	width: 550px;
-	height: 550px;
+#jb{
+	
 }
 
+
 .overlay{
+	display: flex;
 	opacity: 0;
 	transition: 0.5s ease;
 	position: absolute;
-	top: 0px ;
-	left: 0px;
-	height: 550px;
-	width: 550px;
+	bottom: 0;
 	text-align: center;
-	background-color: #cccccc;
+	z-index: 8;
 }
 
+
 .button{
-	padding: 60px 32px;
 	font-size: 40px;
 	font-family: 'cattedrale-demoregular', 'Jost', sans-serif;
 	z-index: 10;
-	margin-top: 240px;
 }
 
 .button li a{
@@ -131,15 +78,28 @@ header a:visited{
 	color: royalblue;
 }
 
-.ts-container:hover .ts-img {
+#jb:hover .img-fluid {
 	opacity: .7;
 	transition: 0.5s ease;
 }
 
-.ts-container:hover .overlay {
-	opacity: .7;
+#jb:hover .overlay {
+	opacity: .8;
+	background-color: #aaaaaa;
 	transition: 0.5s ease-out;
 }
+
+#ep:hover .img-fluid {
+	opacity: .7;
+	transition: 0.5s ease;
+}
+
+#ep:hover .overlay {
+	opacity: .8;
+	background-color: #aaaaaa;
+	transition: 0.5s ease-out;
+}
+
 
 /* carousel section */
 
@@ -158,73 +118,42 @@ header a:visited{
 
 /* photo section design */
 
-
-.mentalblog{
-	position: absolute;
-	display: inline-flex;
-	left: 400px;
-
-	margin: 0 auto;
-}
-
-.mentaladvices h2{
-	padding: 12px;
-	font-size: 40px;
-}
-
-.mentaladvices ol{
-	list-style-type: i;
-	margin: 0px;
-	padding-left: 8px;
-}
-
-
-.mentaladvices li{
-	margin-left: 28px;
-	font-size: 20px;
-}
-
-.mentaladvices p{
-	width: 480px;
-	padding-left: 12px;
-}
-
-
-.parallax{
-	top: 0px ;
-	left: 0px;
-	height: 800px;
-	width: 1200px;
-	margin: auto;
-	/* The image used */
-	background-position: right bottom, left top;
+.photo{
 	background-size: 40px 40px;
 	background-image: linear-gradient(to right, #cccccc 1px, transparent 1px),
 	linear-gradient(to bottom, #cccccc 1px, transparent 1px);
-
+	/* The image used */
+	
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
  
 }	
 
+
+}
+.mentaladvices ol{
+	list-style-type: i;
+}
+
+
+.mentaladvices li{
+	font-size: 20px;
+}
+
+
+
+/*
 @media only screen and (max-device-width: 800px) {
   .parallax {
     background-attachment: scroll;
   }
 }
 
-/*last gif*/
-
-.endloop{
-	display: flex;
-	margin: 0 auto;
-	overflow: hidden;
-	width: 1200px;
-}
+last gif*/
 
 .endgif{
-	width: 1200px;
+	width: 100%;
 }
 
 /*footer*/
