@@ -1,0 +1,238 @@
+@import url('./general.css');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Secular+One&display=swap');
+@font-face {
+    font-family: 'cattedrale-demoregular';
+    src: url('cattedrale-demo-regular-webfont.woff2') format('woff2'),
+         url('cattedrale-demo-regular-webfont.woff') format('woff'),
+         url('cattedrale-demo-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*bootstrap nav bar*/
+.navbar-brand{
+	display: inline-flex;
+	align-self: left;
+}
+
+css{box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+#logo{
+	width: 8vw;
+	height: 9.6vw;
+}
+
+.navbar-brand a{
+	color: #000000;
+	text-decoration: none;
+}
+
+.navbar-brand a:visited{
+	color: #000000;
+	text-decoration: none;
+}
+
+/*section design*/
+
+/*adding tiled background*/
+.aboutbg{
+	width: 100%;
+	background-image: url("../images/bg.png");
+	background-color: #7799cc;
+	opacity: 0.33;
+	z-index: -1;
+}
+
+
+/* make animated and interactive buttons for shopping in first section */
+
+
+
+
+.overlay{
+	display: flex;
+	opacity: 0;
+	transition: 0.5s ease;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	z-index: 8;
+}
+
+
+.button{
+	font-size: 40px;
+	font-family: 'cattedrale-demoregular', 'Jost', sans-serif;
+	z-index: 10;
+}
+
+.button li a{
+	text-decoration: none;
+}
+
+.button a:hover{
+	color: royalblue;
+}
+
+#jb:hover .img-fluid {
+	opacity: .7;
+	transition: 0.5s ease;
+}
+
+#jb:hover .overlay {
+	opacity: .8;
+	background-color: #aaaaaa;
+	transition: 0.5s ease-out;
+}
+
+#ep:hover .img-fluid {
+	opacity: .7;
+	transition: 0.5s ease;
+}
+
+#ep:hover .overlay {
+	opacity: .8;
+	background-color: #aaaaaa;
+	transition: 0.5s ease-out;
+}
+
+
+/* carousel section */
+
+.carousel-item active{
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.carousel-caption-block{
+	background-color: #cccccc;
+	z-index: 10;
+	margin: 0 auto;
+}
+
+/* photo section design */
+
+.photo{
+	background-size: 40px 40px;
+	background-image: linear-gradient(to right, #cccccc 1px, transparent 1px),
+	linear-gradient(to bottom, #cccccc 1px, transparent 1px);
+	/* The image used */
+	
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+ 
+}	
+
+
+
+.mentaladvices ol{
+	list-style-type: i;
+}
+
+
+.mentaladvices li{
+	font-size: 20px;
+}
+
+
+
+/*
+@media only screen and (max-device-width: 800px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+last gif*/
+
+.endgif{
+	width: 100%;
+}
+
+/*footer*/
+
+footer{
+	display: flex;
+	margin-bottom: 0px;
+	line-height: 18px;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+	font-kerning: normal;
+	background-image: linear-gradient(to top, #cccccc 20px, tomato 20px);
+}
+
+footer .last{
+	float: right;
+}
