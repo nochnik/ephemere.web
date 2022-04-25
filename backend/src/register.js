@@ -8,14 +8,9 @@ email:{
 password:{
     type: String
 },
-fname:{
+name:{
     type: String
 },
-
-lname:{
-    type: String
-
-}
 
 })
 

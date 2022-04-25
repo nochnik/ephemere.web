@@ -11,17 +11,24 @@ app.use(express.json());
 app.use(express.static(static_path));
 app.use(express.urlencoded({extended:false}))
 
-app.get("/",(req,res)=>{
-    res.render("server work")
-})
 app.get(".register",(req,res)=>{
+    try{
+        
+        
+
+    }catch(e){
+        res.status(400).send(error);
+
+    }
     res.render("register");
 })
 
-app.post("/register", async (req,res)=>{
+app.post("/register", (req,res)=>{
     try{
-        console.log(req.body.email)
-        res.send(req.body.email)
+        const email = req.body.email;
+        const password = req.body.pass
+        const name = req.body.name;
+        console.log(email + name)
 
     }catch(e){
         res.status(400).send(error);
